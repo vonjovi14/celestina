@@ -1,0 +1,2 @@
+yyyyMMdd.txt と同じ日付名の yyyyMMdd.png を保存してください。
+例: 20261006.png

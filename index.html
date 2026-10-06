@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171526">
+  <title>Today's Celestina</title>
+  <meta name="description" content="セレスティーナの、なんでもない毎日。Today's Celestina">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Today's Celestina トップ">
+      <span class="brand-moon">☾</span>
+      <span>Celestina.</span>
+    </a>
+    <a class="producer-link" href="https://x.com/vonjovi_14" target="_blank" rel="noopener noreferrer">
+      Produced by vonjovi(@vonjovi_14)
+    </a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" role="img" aria-label="Celestina"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-stars" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">今日のセレスティーナ</p>
+        <h1 id="hero-title">TODAY'S<br>CELESTINA</h1>
+        <p class="hero-script">A little piece of my everyday life.</p>
+        <p class="hero-lead">どこにでもあるようで、<br>どこにもない、<br>セレスティーナの、なんでもない毎日。</p>
+        <a class="scroll-cue" href="#about"><span>SCROLL</span><i></i></a>
+      </div>
+      <div class="hero-sidecopy" aria-hidden="true">今日も、<br>どこかで。<br>あなたと。</div>
+    </section>
+
+    <section class="about section-light" id="about">
+      <div class="section-inner about-grid">
+        <div class="about-copy">
+          <p class="section-kicker">ABOUT</p>
+          <h2>Hello,<br>I'm Celestina.<span class="gold">☾</span></h2>
+          <p>
+            セレスティーナ。<br>
+            ちょっとお嬢様で、ちょっと意地悪。<br>
+            毎日どこかで、のんびり暮らしています。
+          </p>
+          <p>
+            この場所では、そんな私の何気ない日常を<br>
+            少しずつ綴っていきます。
+          </p>
+          <p class="about-last">……ふふ、今日はどんな私に会えるかな？</p>
+        </div>
+        <div class="profile-visual">
+          <img src="./sozai/profile.png" alt="セレスティーナのプロフィール画像"
+               onerror="this.closest('.profile-visual').classList.add('image-missing');this.style.display='none'">
+          <span class="missing-label">./sozai/profile.png</span>
+        </div>
+        <dl class="profile-data">
+          <div><dt>NAME</dt><dd>Celestina</dd></div>
+          <div><dt>CHARACTER</dt><dd>上品・知的・少し意地悪</dd></div>
+          <div><dt>LIKES</dt><dd>月・紅茶・夜ふかし・きみ</dd></div>
+          <div><dt>MOOD</dt><dd>気まぐれ、ときどきご機嫌</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-inner">
+        <div class="gallery-heading">
+          <div>
+            <p class="section-kicker">ARCHIVE</p>
+            <h2>DAILY GALLERY</h2>
+          </div>
+          <p>今日のセレスティーナ、<br class="mobile-only">きっとどこかで特別になる。</p>
+          <div class="moon-phases" aria-hidden="true">◐ ◑ ◒ ● ◓ ◐</div>
+        </div>
+
+        <div id="gallery-list" class="gallery-list" aria-live="polite"></div>
+
+        <div id="gallery-status" class="gallery-status">
+          <span class="loader" aria-hidden="true"></span>
+          <span class="status-text">Loading Celestina...</span>
+        </div>
+        <div id="scroll-sentinel" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <span class="footer-mark">☾</span>
+      <strong>Today's Celestina</strong>
+    </div>
+    <a href="https://x.com/vonjovi_14" target="_blank" rel="noopener noreferrer">
+      Produced by vonjovi(@vonjovi_14)
+    </a>
+    <small>© <span id="copyright-year"></span> vonjovi × Celestina</small>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="閉じる" data-close-modal>×</button>
+      <div class="modal-meta">
+        <div class="modal-datebox">
+          <span id="modal-year"></span>
+          <strong id="modal-date"></strong>
+          <span id="modal-weekday"></span>
+        </div>
+        <div>
+          <p class="section-kicker">TODAY'S CELESTINA</p>
+          <h2 id="modal-title"></h2>
+          <p id="modal-caption" class="modal-caption"></p>
+        </div>
+      </div>
+      <div class="modal-image-wrap">
+        <img id="modal-image" src="" alt="">
+      </div>
+    </article>
+  </div>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>

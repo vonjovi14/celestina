@@ -1,0 +1,2 @@
+hero.png     ファーストビュー用
+profile.png  自己紹介用
